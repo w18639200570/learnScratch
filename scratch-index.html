@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编程王</title>
+    <style>
+        #viewDiv{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a href="build/index.html">test</a>
+</div>
+<div id="viewDiv"></div>
+<script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.js"></script>
+<script>
+    document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="build/index.html" width="100%" height="100%"></object>';
+    setTimeout(function(){
+        $('.preview-modal_ok-button_2ysg3').click();
+    },1000)
+</script>
+</body>
+</html>
